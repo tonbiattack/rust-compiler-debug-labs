@@ -1,0 +1,26 @@
+[1m[32m   Compiling[0m rust_private_method_e0624_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-private-method-e0624-debug-lab)
+[1m[32m    Finished[0m test [unoptimized + debuginfo] target(s) in 0.42s
+[1m[32m     Running[0m unittests src/lib.rs (target/debug/deps/rust_private_method_e0624_debug_lab-262c8c1c38dc4386)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m unittests src/main.rs (target/debug/deps/rust_private_method_e0624_debug_lab-7293f6e302927255)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m tests/public_title.rs (target/debug/deps/public_title-416044bf1ef6d134)
+
+running 1 test
+test returns_the_display_title ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m   Doc-tests[0m rust_private_method_e0624_debug_lab
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

@@ -1,0 +1,27 @@
+[1m[32m   Compiling[0m rust_lifetime_choice_e0106_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-lifetime-choice-e0106-debug-lab)
+[1m[32m    Finished[0m test [unoptimized + debuginfo] target(s) in 0.52s
+[1m[32m     Running[0m unittests src/lib.rs (target/debug/deps/rust_lifetime_choice_e0106_debug_lab-f401cf9c1d085120)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m unittests src/main.rs (target/debug/deps/rust_lifetime_choice_e0106_debug_lab-4fb83dc5015b124e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m tests/active_label.rs (target/debug/deps/active_label-bd3e817e387f47e6)
+
+running 2 tests
+test returns_the_primary_label_when_it_is_not_empty ... ok
+test returns_the_fallback_label_when_primary_is_empty ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m   Doc-tests[0m rust_lifetime_choice_e0106_debug_lab
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

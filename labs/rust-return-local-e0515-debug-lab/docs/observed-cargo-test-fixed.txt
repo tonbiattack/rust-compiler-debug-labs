@@ -1,0 +1,27 @@
+[1m[32m   Compiling[0m rust_return_local_e0515_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-return-local-e0515-debug-lab)
+[1m[32m    Finished[0m test [unoptimized + debuginfo] target(s) in 0.43s
+[1m[32m     Running[0m unittests src/lib.rs (target/debug/deps/rust_return_local_e0515_debug_lab-27e33c3c07c7ac51)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m unittests src/main.rs (target/debug/deps/rust_return_local_e0515_debug_lab-6f1b5671e927ec2e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m tests/normalize_label.rs (target/debug/deps/normalize_label-710e40989c6c1d2d)
+
+running 2 tests
+test keeps_internal_spaces ... ok
+test returns_an_owned_normalized_label ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m   Doc-tests[0m rust_return_local_e0515_debug_lab
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

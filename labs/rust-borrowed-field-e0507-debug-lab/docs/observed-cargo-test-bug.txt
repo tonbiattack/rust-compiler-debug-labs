@@ -1,0 +1,11 @@
+[1m[32m   Compiling[0m rust_borrowed_field_e0507_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-borrowed-field-e0507-debug-lab)
+[0m[1m[38;5;9merror[E0507][0m[0m[1m: cannot move out of `job.label` which is behind a shared reference[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:7:5[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m7[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    job.label[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mmove occurs because `job.label` has type `String`, which does not implement the `Copy` trait[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0507`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_borrowed_field_e0507_debug_lab` (lib) due to previous error
+[1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+[1m[31merror[0m[1m:[0m could not compile `rust_borrowed_field_e0507_debug_lab` (lib test) due to previous error

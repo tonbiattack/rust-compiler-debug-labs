@@ -1,0 +1,17 @@
+[1m[32m    Checking[0m rust_trait_associated_call_e0790_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-trait-associated-call-e0790-debug-lab)
+[0m[1m[38;5;9merror[E0790][0m[0m[1m: cannot call associated function on trait without specifying the corresponding `impl` type[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:6:43[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m1[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mpub trait Slug { fn prefix() -> &'static str; }[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                 [0m[0m[1m[38;5;12m----------------------------[0m[0m [0m[0m[1m[38;5;12m`Slug::prefix` defined here[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m6[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mpub fn default_prefix() -> &'static str { Slug::prefix() }[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                                          [0m[0m[1m[38;5;9m^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcannot call associated function of trait[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;14mhelp[0m[0m: use a fully-qualified path to a specific available implementation[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m6[0m[0m [0m[0m[1m[38;5;12m| [0m[0mpub fn default_prefix() -> &'static str { [0m[0m[38;5;10m</* self type */ as [0m[0mSlug[0m[0m[38;5;10m>[0m[0m::prefix() }[0m
+[0m  [0m[0m[1m[38;5;12m|[0m[0m                                           [0m[0m[38;5;10m+++++++++++++++++++[0m[0m     [0m[0m[38;5;10m+[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0790`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_trait_associated_call_e0790_debug_lab` (lib) due to previous error

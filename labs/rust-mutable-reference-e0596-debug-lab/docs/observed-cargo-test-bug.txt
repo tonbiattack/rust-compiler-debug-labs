@@ -1,0 +1,16 @@
+[1m[32m   Compiling[0m rust_mutable_reference_e0596_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-mutable-reference-e0596-debug-lab)
+[0m[1m[38;5;9merror[E0596][0m[0m[1m: cannot borrow `*label` as mutable, as it is behind a `&` reference[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:3:5[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m3[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    label.push_str("-complete");[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;9m^^^^^[0m[0m [0m[0m[1m[38;5;9m`label` is a `&` reference, so the data it refers to cannot be borrowed as mutable[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;14mhelp[0m[0m: consider changing this to be a mutable reference[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m2[0m[0m [0m[0m[1m[38;5;12m| [0m[0mpub fn mark_complete(label: &[0m[0m[38;5;10mmut [0m[0mString) {[0m
+[0m  [0m[0m[1m[38;5;12m|[0m[0m                              [0m[0m[38;5;10m+++[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0596`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_mutable_reference_e0596_debug_lab` (lib) due to previous error
+[1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+[1m[31merror[0m[1m:[0m could not compile `rust_mutable_reference_e0596_debug_lab` (lib test) due to previous error

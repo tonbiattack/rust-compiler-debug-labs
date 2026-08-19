@@ -1,0 +1,11 @@
+[1m[32m   Compiling[0m rust_trait_extra_method_e0407_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-trait-extra-method-e0407-debug-lab)
+[0m[1m[38;5;9merror[E0407][0m[0m[1m: method `display_name` is not a member of trait `Renderer`[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:5:5[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m5[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    fn display_name(&self) -> String { self.title.to_uppercase() }[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mnot a member of trait `Renderer`[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0407`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_trait_extra_method_e0407_debug_lab` (lib) due to previous error
+[1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+[1m[31merror[0m[1m:[0m could not compile `rust_trait_extra_method_e0407_debug_lab` (lib test) due to previous error

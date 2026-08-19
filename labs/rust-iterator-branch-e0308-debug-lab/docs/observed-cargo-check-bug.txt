@@ -1,0 +1,28 @@
+[1m[32m    Checking[0m rust_iterator_branch_e0308_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-iterator-branch-e0308-debug-lab)
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: `if` and `else` have incompatible types[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:6:9[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m3[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m/[0m[0m [0m[0m    if include_closed {[0m
+[0m[1m[38;5;12m4[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        ["open", "closed"].into_iter()[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[38;5;12m------------------------------[0m[0m [0m[0m[1m[38;5;12mexpected because of this[0m
+[0m[1m[38;5;12m5[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    } else {[0m
+[0m[1m[38;5;12m6[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        std::iter::once("open")[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `IntoIter<&str, 2>`, found `Once<&str>`[0m
+[0m[1m[38;5;12m7[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    }[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m[1m[38;5;12m|_____-[0m[0m [0m[0m[1m[38;5;12m`if` and `else` have incompatible types[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected struct `std::[0m[0m[1marray::IntoIter<&str, 2>[0m[0m`[0m
+[0m             found struct `std::[0m[0m[1miter::Once<&str>[0m[0m`[0m
+[0m[1m[38;5;14mhelp[0m[0m: you could change the return type to be a boxed trait object[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m2[0m[0m [0m[0m[1m[38;5;12m| [0m[0mpub fn statuses(include_closed: bool) -> [0m[0m[38;5;10mBox<dyn[0m[0m Iterator<Item = &'static str>[0m[0m[38;5;10m>[0m[0m {[0m
+[0m  [0m[0m[1m[38;5;12m|[0m[0m                                          [0m[0m[38;5;10m~~~~~~~[0m[0m                              [0m[0m[38;5;10m+[0m
+[0m[1m[38;5;14mhelp[0m[0m: if you change the return type to expect trait objects, box the returned expressions[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4[0m[0m [0m[0m[38;5;10m~ [0m[0m        [0m[0m[38;5;10mBox::new([0m[0m["open", "closed"].into_iter()[0m[0m[38;5;10m)[0m
+[0m[1m[38;5;12m5[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    } else {[0m
+[0m[1m[38;5;12m6[0m[0m [0m[0m[38;5;10m~ [0m[0m        [0m[0m[38;5;10mBox::new([0m[0mstd::iter::once("open")[0m[0m[38;5;10m)[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_iterator_branch_e0308_debug_lab` (lib) due to previous error

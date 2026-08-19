@@ -1,0 +1,19 @@
+[1m[32m    Checking[0m rust_function_args_e0061_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-function-args-e0061-debug-lab)
+[0m[1m[38;5;9merror[E0061][0m[0m[1m: this function takes 2 arguments but 1 argument was supplied[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:7:5[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m7[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    retry_delay(5)[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;9m^^^^^^^^^^^[0m[0m[1m[38;5;12m---[0m[0m [0m[0m[1m[38;5;12man argument of type `u32` is missing[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;10mnote[0m[0m: function defined here[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:2:8[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m2[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mpub fn retry_delay(base_seconds: u64, attempt: u32) -> u64 {[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m       [0m[0m[1m[38;5;10m^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;12m-----------------[0m[0m  [0m[0m[1m[38;5;12m------------[0m
+[0m[1m[38;5;14mhelp[0m[0m: provide the argument[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m7[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    retry_delay[0m[0m[38;5;10m(5, /* u32 */)[0m
+[0m  [0m[0m[1m[38;5;12m|[0m[0m                [0m[0m[38;5;10m~~~~~~~~~~~~~~[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0061`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_function_args_e0061_debug_lab` (lib) due to previous error

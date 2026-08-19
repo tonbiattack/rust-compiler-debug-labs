@@ -1,0 +1,2 @@
+[1m[32m    Checking[0m rust_return_local_e0515_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-return-local-e0515-debug-lab)
+[1m[32m    Finished[0m dev [unoptimized + debuginfo] target(s) in 0.10s

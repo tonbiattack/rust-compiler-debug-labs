@@ -1,0 +1,3 @@
+[1m[32m    Finished[0m dev [unoptimized + debuginfo] target(s) in 0.02s
+[1m[32m     Running[0m `target/debug/rust_temporary_borrow_e0716_debug_lab`
+4

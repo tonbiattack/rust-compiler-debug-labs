@@ -1,0 +1,23 @@
+[1m[32m   Compiling[0m rust_trait_import_e0599_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-trait-import-e0599-debug-lab)
+[0m[1m[38;5;9merror[E0599][0m[0m[1m: no method named `write_all` found for struct `std::io::Cursor` in the current scope[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:8:10[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m7[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m/[0m[0m [0m[0m    writer[0m
+[0m[1m[38;5;12m8[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        .write_all(b"ready")[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m[1m[38;5;12m|[0m[0m         [0m[0m[1m[38;5;12m-[0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mmethod not found in `Cursor<&mut Vec<_>>`[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m[1m[38;5;12m|_________|[0m
+[0m  [0m[0m[1m[38;5;12m| [0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0m/build/rustc-Sfhptz/rustc-1.75.0+dfsg0ubuntu1/library/std/src/io/mod.rs:1620:8[0m
+[0m [0m[0m[1m[38;5;12m |[0m
+[0m [0m[0m[1m[38;5;12m = note: the method is available for `std::io::Cursor<&mut Vec<_>>` here[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: items from traits can only be used if the trait is in scope[0m
+[0m[1m[38;5;14mhelp[0m[0m: the following trait is implemented but not in scope; perhaps add a `use` for it:[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m1[0m[0m [0m[0m[38;5;10m+ use std::io::Write;[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0599`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_trait_import_e0599_debug_lab` (lib test) due to previous error
+[1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+[1m[31merror[0m[1m:[0m could not compile `rust_trait_import_e0599_debug_lab` (lib) due to previous error

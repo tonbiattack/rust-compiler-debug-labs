@@ -1,0 +1,14 @@
+[1m[32m   Compiling[0m rust_return_local_e0515_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-return-local-e0515-debug-lab)
+[0m[1m[38;5;9merror[E0515][0m[0m[1m: cannot return value referencing local variable `normalized`[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:5:5[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m5[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    normalized.as_str()[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m----------[0m[0m[1m[38;5;9m^^^^^^^^^[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;9mreturns a value referencing data owned by the current function[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m`normalized` is borrowed here[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0515`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_return_local_e0515_debug_lab` (lib) due to previous error
+[1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+[1m[31merror[0m[1m:[0m could not compile `rust_return_local_e0515_debug_lab` (lib test) due to previous error

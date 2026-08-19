@@ -1,0 +1,26 @@
+[1m[32m   Compiling[0m rust_trait_extra_method_e0407_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-trait-extra-method-e0407-debug-lab)
+[1m[32m    Finished[0m test [unoptimized + debuginfo] target(s) in 0.48s
+[1m[32m     Running[0m unittests src/lib.rs (target/debug/deps/rust_trait_extra_method_e0407_debug_lab-1b2ab1dbfbcc2eec)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m unittests src/main.rs (target/debug/deps/rust_trait_extra_method_e0407_debug_lab-dcceffe59fbafcee)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m tests/renderer.rs (target/debug/deps/renderer-ba610e579c9e1c4d)
+
+running 1 test
+test renders_and_exposes_a_display_name ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m   Doc-tests[0m rust_trait_extra_method_e0407_debug_lab
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

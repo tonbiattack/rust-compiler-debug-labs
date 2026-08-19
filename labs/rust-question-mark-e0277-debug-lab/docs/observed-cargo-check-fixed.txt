@@ -1,0 +1,2 @@
+[1m[32m    Checking[0m rust_question_mark_e0277_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-question-mark-e0277-debug-lab)
+[1m[32m    Finished[0m dev [unoptimized + debuginfo] target(s) in 0.14s

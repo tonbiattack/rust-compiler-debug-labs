@@ -1,0 +1,2 @@
+[1m[32m    Checking[0m rust_mutable_reference_e0596_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-mutable-reference-e0596-debug-lab)
+[1m[32m    Finished[0m dev [unoptimized + debuginfo] target(s) in 0.10s

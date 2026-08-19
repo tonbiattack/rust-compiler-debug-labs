@@ -1,0 +1,27 @@
+[1m[32m   Compiling[0m rust_iterator_branch_e0308_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-iterator-branch-e0308-debug-lab)
+[1m[32m    Finished[0m test [unoptimized + debuginfo] target(s) in 0.58s
+[1m[32m     Running[0m unittests src/lib.rs (target/debug/deps/rust_iterator_branch_e0308_debug_lab-4f02fddefa189443)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m unittests src/main.rs (target/debug/deps/rust_iterator_branch_e0308_debug_lab-ab237a8c3d2d1637)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m tests/statuses.rs (target/debug/deps/statuses-c2e2a20ee1297754)
+
+running 2 tests
+test includes_closed_status_when_requested ... ok
+test returns_only_open_status_when_closed_is_not_requested ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m   Doc-tests[0m rust_iterator_branch_e0308_debug_lab
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

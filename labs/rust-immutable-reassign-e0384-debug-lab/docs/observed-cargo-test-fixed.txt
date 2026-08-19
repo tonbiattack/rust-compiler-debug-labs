@@ -1,0 +1,26 @@
+[1m[32m   Compiling[0m rust_immutable_reassign_e0384_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-immutable-reassign-e0384-debug-lab)
+[1m[32m    Finished[0m test [unoptimized + debuginfo] target(s) in 0.50s
+[1m[32m     Running[0m unittests src/lib.rs (target/debug/deps/rust_immutable_reassign_e0384_debug_lab-1553318f38f0f4d9)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m unittests src/main.rs (target/debug/deps/rust_immutable_reassign_e0384_debug_lab-6af1fdb585978669)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m tests/capped_delay.rs (target/debug/deps/capped_delay-c89b52f2582fdcca)
+
+running 1 test
+test caps_the_delay ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m   Doc-tests[0m rust_immutable_reassign_e0384_debug_lab
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

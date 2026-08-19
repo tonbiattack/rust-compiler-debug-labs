@@ -1,0 +1,21 @@
+[1m[32m    Checking[0m rust_dyn_compatibility_e0038_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-dyn-compatibility-e0038-debug-lab)
+[0m[1m[38;5;9merror[E0038][0m[0m[1m: the trait `Snapshot` cannot be made into an object[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:10:26[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m10[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mpub fn render(snapshot: &dyn Snapshot) -> String { snapshot.id() }[0m
+[0m   [0m[0m[1m[38;5;12m| [0m[0m                         [0m[0m[1m[38;5;9m^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9m`Snapshot` cannot be made into an object[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;10mnote[0m[0m: for a trait to be "object safe" it needs to allow building a vtable to allow the call to be resolvable dynamically; for more information visit <https://doc.rust-lang.org/reference/items/traits.html#object-safety>[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:3:28[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m1[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0mpub trait Snapshot {[0m
+[0m   [0m[0m[1m[38;5;12m| [0m[0m          [0m[0m[1m[38;5;12m--------[0m[0m [0m[0m[1m[38;5;12mthis trait cannot be made into an object...[0m
+[0m[1m[38;5;12m2[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    fn id(&self) -> String;[0m
+[0m[1m[38;5;12m3[0m[0m  [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    fn duplicate(&self) -> Self;[0m
+[0m   [0m[0m[1m[38;5;12m| [0m[0m                           [0m[0m[1m[38;5;10m^^^^[0m[0m [0m[0m[1m[38;5;10m...because method `duplicate` references the `Self` type in its return type[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: consider moving `duplicate` to another trait[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: only type `Note` is seen to implement the trait in this crate, consider using it directly instead[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `Snapshot` can be implemented in other crates; if you want to support your users passing their own types here, you can't refer to a specific type[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0038`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_dyn_compatibility_e0038_debug_lab` (lib) due to previous error

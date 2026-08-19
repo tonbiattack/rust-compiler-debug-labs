@@ -1,0 +1,11 @@
+[1m[32m   Compiling[0m rust_private_field_e0616_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-private-field-e0616-debug-lab)
+[0m[1m[38;5;9merror[E0616][0m[0m[1m: field `title` of struct `Task` is private[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:15:10[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m15[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    task.title.clone()[0m
+[0m   [0m[0m[1m[38;5;12m| [0m[0m         [0m[0m[1m[38;5;9m^^^^^[0m[0m [0m[0m[1m[38;5;9mprivate field[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0616`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_private_field_e0616_debug_lab` (lib) due to previous error
+[1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+[1m[31merror[0m[1m:[0m could not compile `rust_private_field_e0616_debug_lab` (lib test) due to previous error

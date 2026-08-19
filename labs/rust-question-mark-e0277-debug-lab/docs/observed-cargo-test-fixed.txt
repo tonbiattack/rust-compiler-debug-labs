@@ -1,0 +1,27 @@
+[1m[32m   Compiling[0m rust_question_mark_e0277_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-question-mark-e0277-debug-lab)
+[1m[32m    Finished[0m test [unoptimized + debuginfo] target(s) in 0.70s
+[1m[32m     Running[0m unittests src/lib.rs (target/debug/deps/rust_question_mark_e0277_debug_lab-5ede85e2ea38765a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m unittests src/main.rs (target/debug/deps/rust_question_mark_e0277_debug_lab-ae31ee9d71f786b6)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m tests/parse_port.rs (target/debug/deps/parse_port-ece0d32b89f9c59f)
+
+running 2 tests
+test returns_a_readable_error_for_invalid_input ... ok
+test parses_a_valid_port_number ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m   Doc-tests[0m rust_question_mark_e0277_debug_lab
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

@@ -1,0 +1,22 @@
+[1m[32m    Checking[0m rust_partial_eq_e0369_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-partial-eq-e0369-debug-lab)
+[0m[1m[38;5;9merror[E0369][0m[0m[1m: binary operation `==` cannot be applied to type `ReleaseWindow`[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:9:10[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m9[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    left == right[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m----[0m[0m [0m[0m[1m[38;5;9m^^[0m[0m [0m[0m[1m[38;5;12m-----[0m[0m [0m[0m[1m[38;5;12mReleaseWindow[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mReleaseWindow[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;10mnote[0m[0m: an implementation of `PartialEq` might be missing for `ReleaseWindow`[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:2:1[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m2[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mpub struct ReleaseWindow {[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m[1m[38;5;10m^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;10mmust implement `PartialEq`[0m
+[0m[1m[38;5;14mhelp[0m[0m: consider annotating `ReleaseWindow` with `#[derive(PartialEq)]`[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m2[0m[0m [0m[0m[38;5;10m+ #[derive(PartialEq)][0m
+[0m[1m[38;5;12m3[0m[0m [0m[0m[1m[38;5;12m| [0m[0mpub struct ReleaseWindow {[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0369`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_partial_eq_e0369_debug_lab` (lib) due to previous error

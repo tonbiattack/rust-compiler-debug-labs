@@ -1,0 +1,26 @@
+[1m[32m   Compiling[0m rust_thread_spawn_e0373_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-thread-spawn-e0373-debug-lab)
+[0m[1m[38;5;9merror[E0373][0m[0m[1m: closure may outlive the current function, but it borrows `label`, which is owned by the current function[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:5:32[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m5[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let handle = thread::spawn(|| {[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                               [0m[0m[1m[38;5;9m^^[0m[0m [0m[0m[1m[38;5;9mmay outlive borrowed value `label`[0m
+[0m[1m[38;5;12m6[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        format!("{label}: 完了")[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                  [0m[0m[1m[38;5;12m-----[0m[0m [0m[0m[1m[38;5;12m`label` is borrowed here[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;10mnote[0m[0m: function requires argument type to outlive `'static`[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:5:18[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m5[0m[0m [0m[0m[1m[38;5;12m|[0m[0m   [0m[0m    let handle = thread::spawn(|| {[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m [0m[0m[1m[38;5;10m__________________^[0m
+[0m[1m[38;5;12m6[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;10m|[0m[0m [0m[0m        format!("{label}: 完了")[0m
+[0m[1m[38;5;12m7[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m[1m[38;5;10m|[0m[0m [0m[0m    });[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m[1m[38;5;10m|______^[0m
+[0m[1m[38;5;14mhelp[0m[0m: to force the closure to take ownership of `label` (and any other referenced variables), use the `move` keyword[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m5[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    let handle = thread::spawn([0m[0m[38;5;10mmove [0m[0m|| {[0m
+[0m  [0m[0m[1m[38;5;12m|[0m[0m                                [0m[0m[38;5;10m++++[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0373`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_thread_spawn_e0373_debug_lab` (lib) due to previous error
+[1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+[1m[31merror[0m[1m:[0m could not compile `rust_thread_spawn_e0373_debug_lab` (lib test) due to previous error

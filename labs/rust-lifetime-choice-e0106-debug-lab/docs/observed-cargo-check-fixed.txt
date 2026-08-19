@@ -1,0 +1,2 @@
+[1m[32m    Checking[0m rust_lifetime_choice_e0106_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-lifetime-choice-e0106-debug-lab)
+[1m[32m    Finished[0m dev [unoptimized + debuginfo] target(s) in 0.12s

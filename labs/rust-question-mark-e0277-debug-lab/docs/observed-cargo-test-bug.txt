@@ -1,0 +1,23 @@
+[1m[32m   Compiling[0m rust_question_mark_e0277_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-question-mark-e0277-debug-lab)
+[0m[1m[38;5;9merror[E0277][0m[0m[1m: `?` couldn't convert the error to `String`[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:3:34[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m2[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mpub fn parse_port(input: &str) -> Result<u16, String> {[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                                  [0m[0m[1m[38;5;12m-------------------[0m[0m [0m[0m[1m[38;5;12mexpected `String` because of this[0m
+[0m[1m[38;5;12m3[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let port: u16 = input.parse()?;[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                                 [0m[0m[1m[38;5;9m^[0m[0m [0m[0m[1m[38;5;9mthe trait `From<ParseIntError>` is not implemented for `String`[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: the question mark operation (`?`) implicitly performs a conversion on the error value using the `From` trait[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: the following other types implement trait `From<T>`:[0m
+[0m            <String as From<char>>[0m
+[0m            <String as From<Box<str>>>[0m
+[0m            <String as From<Cow<'a, str>>>[0m
+[0m            <String as From<&str>>[0m
+[0m            <String as From<&mut str>>[0m
+[0m            <String as From<&String>>[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: required for `Result<u16, String>` to implement `FromResidual<Result<Infallible, ParseIntError>>`[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0277`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_question_mark_e0277_debug_lab` (lib) due to previous error
+[1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+[1m[31merror[0m[1m:[0m could not compile `rust_question_mark_e0277_debug_lab` (lib test) due to previous error
