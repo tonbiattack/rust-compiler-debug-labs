@@ -1,0 +1,11 @@
+[1m[32m   Compiling[0m rust_struct_initializer_e0063_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-struct-initializer-e0063-debug-lab)
+[0m[1m[38;5;9merror[E0063][0m[0m[1m: missing field `priority` in initializer of `Task`[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:2:26[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m2[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mpub fn daily() -> Task { Task { title: String::from("daily") } }[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                         [0m[0m[1m[38;5;9m^^^^[0m[0m [0m[0m[1m[38;5;9mmissing `priority`[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0063`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_struct_initializer_e0063_debug_lab` (lib) due to previous error
+[1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+[1m[31merror[0m[1m:[0m could not compile `rust_struct_initializer_e0063_debug_lab` (lib test) due to previous error

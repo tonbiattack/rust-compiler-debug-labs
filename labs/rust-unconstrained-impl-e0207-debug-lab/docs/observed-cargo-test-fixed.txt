@@ -1,0 +1,26 @@
+[1m[32m   Compiling[0m rust_unconstrained_impl_e0207_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-unconstrained-impl-e0207-debug-lab)
+[1m[32m    Finished[0m test [unoptimized + debuginfo] target(s) in 0.39s
+[1m[32m     Running[0m unittests src/lib.rs (target/debug/deps/rust_unconstrained_impl_e0207_debug_lab-0dd738a0e50b7624)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m unittests src/main.rs (target/debug/deps/rust_unconstrained_impl_e0207_debug_lab-29a86e73a52ec37a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m tests/default_count.rs (target/debug/deps/default_count-30096d65b557d260)
+
+running 1 test
+test returns_the_default_u32 ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m   Doc-tests[0m rust_unconstrained_impl_e0207_debug_lab
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

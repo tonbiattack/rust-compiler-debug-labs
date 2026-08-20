@@ -1,0 +1,14 @@
+[1m[32m   Compiling[0m rust_associated_type_dyn_e0191_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-associated-type-dyn-e0191-debug-lab)
+[0m[1m[38;5;9merror[E0191][0m[0m[1m: the value of the associated type `Item` in `Storage` must be specified[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:4:27[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m1[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mpub trait Storage { type Item; fn value(&self) -> Self::Item; }[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                    [0m[0m[1m[38;5;12m---------[0m[0m [0m[0m[1m[38;5;12m`Item` defined here[0m
+[0m[1m[38;5;12m...[0m
+[0m[1m[38;5;12m4[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mpub fn read(storage: &dyn Storage) -> u32 { storage.value() }[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                          [0m[0m[1m[38;5;9m^^^^^^^[0m[0m [0m[0m[1m[38;5;9mhelp: specify the associated type: `Storage<Item = Type>`[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0191`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_associated_type_dyn_e0191_debug_lab` (lib) due to previous error
+[1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+[1m[31merror[0m[1m:[0m could not compile `rust_associated_type_dyn_e0191_debug_lab` (lib test) due to previous error

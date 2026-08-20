@@ -2,6 +2,7 @@
 
 | Error code | Lab | Topic |
 | --- | --- | --- |
+| E0191 | [rust-associated-type-dyn-e0191-debug-lab](labs/rust-associated-type-dyn-e0191-debug-lab) | 関連型未指定のトレイトオブジェクト |
 | E0505 | [rust-borrow-move-e0505-debug-lab](labs/rust-borrow-move-e0505-debug-lab) |  |
 | E0507 | [rust-borrowed-field-e0507-debug-lab](labs/rust-borrowed-field-e0507-debug-lab) |  |
 | E0038 | [rust-dyn-compatibility-e0038-debug-lab](labs/rust-dyn-compatibility-e0038-debug-lab) | dyn互換でないトレイト |
@@ -18,6 +19,7 @@
 | E0277 | [rust-question-mark-e0277-debug-lab](labs/rust-question-mark-e0277-debug-lab) |  |
 | E0515 | [rust-return-local-e0515-debug-lab](labs/rust-return-local-e0515-debug-lab) |  |
 | E0499 | [rust-slice-split-at-mut-e0499-debug-lab](labs/rust-slice-split-at-mut-e0499-debug-lab) |  |
+| E0063 | [rust-struct-initializer-e0063-debug-lab](labs/rust-struct-initializer-e0063-debug-lab) | 構造体初期化時のフィールド省略 |
 | E0027 | [rust-struct-pattern-e0027-debug-lab](labs/rust-struct-pattern-e0027-debug-lab) | 構造体パターンのフィールド省略 |
 | E0716 | [rust-temporary-borrow-e0716-debug-lab](labs/rust-temporary-borrow-e0716-debug-lab) |  |
 | E0373 | [rust-thread-spawn-e0373-debug-lab](labs/rust-thread-spawn-e0373-debug-lab) |  |
@@ -26,4 +28,5 @@
 | E0599 | [rust-trait-import-e0599-debug-lab](labs/rust-trait-import-e0599-debug-lab) |  |
 | E0046 | [rust-trait-item-e0046-debug-lab](labs/rust-trait-item-e0046-debug-lab) |  |
 | E0282 | [rust-type-inference-e0282-debug-lab](labs/rust-type-inference-e0282-debug-lab) |  |
+| E0207 | [rust-unconstrained-impl-e0207-debug-lab](labs/rust-unconstrained-impl-e0207-debug-lab) | 制約されないimpl型パラメータ |
 | E0432 | [rust-unresolved-import-e0432-debug-lab](labs/rust-unresolved-import-e0432-debug-lab) | 解決できないimportパス |
