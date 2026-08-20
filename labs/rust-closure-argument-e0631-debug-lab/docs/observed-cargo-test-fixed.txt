@@ -1,0 +1,26 @@
+[1m[32m   Compiling[0m rust_closure_argument_e0631_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-closure-argument-e0631-debug-lab)
+[1m[32m    Finished[0m test [unoptimized + debuginfo] target(s) in 0.42s
+[1m[32m     Running[0m unittests src/lib.rs (target/debug/deps/rust_closure_argument_e0631_debug_lab-c791bb8ccfc0b9d8)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m unittests src/main.rs (target/debug/deps/rust_closure_argument_e0631_debug_lab-407284cdc8b52a76)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m     Running[0m tests/count.rs (target/debug/deps/count-e34587bcce2143fe)
+
+running 1 test
+test increments_the_input_count ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1m[32m   Doc-tests[0m rust_closure_argument_e0631_debug_lab
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

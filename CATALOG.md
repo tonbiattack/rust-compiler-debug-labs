@@ -2,9 +2,11 @@
 
 | Error code | Lab | Topic |
 | --- | --- | --- |
+| E0034 | [rust-ambiguous-method-e0034-debug-lab](labs/rust-ambiguous-method-e0034-debug-lab) | 同名メソッドの呼び出し曖昧性 |
 | E0191 | [rust-associated-type-dyn-e0191-debug-lab](labs/rust-associated-type-dyn-e0191-debug-lab) | 関連型未指定のトレイトオブジェクト |
 | E0505 | [rust-borrow-move-e0505-debug-lab](labs/rust-borrow-move-e0505-debug-lab) |  |
 | E0507 | [rust-borrowed-field-e0507-debug-lab](labs/rust-borrowed-field-e0507-debug-lab) |  |
+| E0631 | [rust-closure-argument-e0631-debug-lab](labs/rust-closure-argument-e0631-debug-lab) | クロージャ引数の型不一致 |
 | E0525 | [rust-closure-fn-e0525-debug-lab](labs/rust-closure-fn-e0525-debug-lab) | FnOnceクロージャをFnとして渡す失敗 |
 | E0119 | [rust-conflicting-impl-e0119-debug-lab](labs/rust-conflicting-impl-e0119-debug-lab) | 重複するトレイト実装 |
 | E0080 | [rust-const-eval-e0080-debug-lab](labs/rust-const-eval-e0080-debug-lab) | 定数評価の整数オーバーフロー |

@@ -1,0 +1,2 @@
+[1m[32m    Checking[0m rust_closure_argument_e0631_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-closure-argument-e0631-debug-lab)
+[1m[32m    Finished[0m dev [unoptimized + debuginfo] target(s) in 0.13s

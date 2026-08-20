@@ -1,0 +1,21 @@
+[1m[32m   Compiling[0m rust_closure_argument_e0631_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-closure-argument-e0631-debug-lab)
+[0m[1m[38;5;9merror[E0631][0m[0m[1m: type mismatch in closure arguments[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:2:37[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m2[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mpub fn incremented_count() -> u32 { apply_to_count(|value: &str| value.len() as u32) }[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                                    [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;12m-------------[0m[0m [0m[0m[1m[38;5;12mfound signature defined here[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                                    [0m[0m[1m[38;5;9m|[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                                    [0m[0m[1m[38;5;9mexpected due to this[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected closure signature `fn([0m[0m[1mu32[0m[0m) -> [0m[0m[1m_[0m[0m`[0m
+[0m             found closure signature `[0m[0m[1mfor<'a> [0m[0mfn([0m[0m[1m&'a str[0m[0m) -> [0m[0m[1m_[0m[0m`[0m
+[0m[1m[38;5;10mnote[0m[0m: required by a bound in `apply_to_count`[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:1:26[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m1[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mpub fn apply_to_count<F: Fn(u32) -> u32>(operation: F) -> u32 { operation(3) }[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                         [0m[0m[1m[38;5;10m^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;10mrequired by this bound in `apply_to_count`[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0631`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_closure_argument_e0631_debug_lab` (lib) due to previous error
+[1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+[1m[31merror[0m[1m:[0m could not compile `rust_closure_argument_e0631_debug_lab` (lib test) due to previous error
