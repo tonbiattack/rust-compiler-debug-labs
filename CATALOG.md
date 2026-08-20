@@ -6,6 +6,7 @@
 | E0505 | [rust-borrow-move-e0505-debug-lab](labs/rust-borrow-move-e0505-debug-lab) |  |
 | E0507 | [rust-borrowed-field-e0507-debug-lab](labs/rust-borrowed-field-e0507-debug-lab) |  |
 | E0525 | [rust-closure-fn-e0525-debug-lab](labs/rust-closure-fn-e0525-debug-lab) | FnOnceクロージャをFnとして渡す失敗 |
+| E0119 | [rust-conflicting-impl-e0119-debug-lab](labs/rust-conflicting-impl-e0119-debug-lab) | 重複するトレイト実装 |
 | E0080 | [rust-const-eval-e0080-debug-lab](labs/rust-const-eval-e0080-debug-lab) | 定数評価の整数オーバーフロー |
 | E0184 | [rust-drop-copy-e0184-debug-lab](labs/rust-drop-copy-e0184-debug-lab) | Drop型へのCopy実装 |
 | E0038 | [rust-dyn-compatibility-e0038-debug-lab](labs/rust-dyn-compatibility-e0038-debug-lab) | dyn互換でないトレイト |
@@ -31,6 +32,7 @@
 | E0599 | [rust-trait-import-e0599-debug-lab](labs/rust-trait-import-e0599-debug-lab) |  |
 | E0046 | [rust-trait-item-e0046-debug-lab](labs/rust-trait-item-e0046-debug-lab) |  |
 | E0276 | [rust-trait-stricter-bound-e0276-debug-lab](labs/rust-trait-stricter-bound-e0276-debug-lab) | トレイト実装の過剰な型境界 |
+| E0512 | [rust-transmute-size-e0512-debug-lab](labs/rust-transmute-size-e0512-debug-lab) | 異なるサイズのtransmute |
 | E0282 | [rust-type-inference-e0282-debug-lab](labs/rust-type-inference-e0282-debug-lab) |  |
 | E0207 | [rust-unconstrained-impl-e0207-debug-lab](labs/rust-unconstrained-impl-e0207-debug-lab) | 制約されないimpl型パラメータ |
 | E0432 | [rust-unresolved-import-e0432-debug-lab](labs/rust-unresolved-import-e0432-debug-lab) | 解決できないimportパス |

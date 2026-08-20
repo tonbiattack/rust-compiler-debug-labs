@@ -1,0 +1,12 @@
+[1m[32m    Checking[0m rust_transmute_size_e0512_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-transmute-size-e0512-debug-lab)
+[0m[1m[38;5;9merror[E0512][0m[0m[1m: cannot transmute between types of different sizes, or dependently-sized types[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:2:14[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m2[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    unsafe { std::mem::transmute(flag) }[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m             [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^^^[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: source type: `u8` (8 bits)[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: target type: `u16` (16 bits)[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0512`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_transmute_size_e0512_debug_lab` (lib) due to previous error
