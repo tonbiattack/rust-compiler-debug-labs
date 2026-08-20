@@ -1,0 +1,13 @@
+[1m[32m   Compiling[0m rust_unsafe_boundary_e0133_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-unsafe-boundary-e0133-debug-lab)
+[0m[1m[38;5;9merror[E0133][0m[0m[1m: call to unsafe function is unsafe and requires unsafe function or block[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:2:35[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m2[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mpub fn marker() -> &'static str { raw_marker() }[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                                  [0m[0m[1m[38;5;9m^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mcall to unsafe function[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: consult the function's documentation for information on how to avoid undefined behavior[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0133`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_unsafe_boundary_e0133_debug_lab` (lib) due to previous error
+[1m[33mwarning[0m[1m:[0m build failed, waiting for other jobs to finish...
+[1m[31merror[0m[1m:[0m could not compile `rust_unsafe_boundary_e0133_debug_lab` (lib test) due to previous error

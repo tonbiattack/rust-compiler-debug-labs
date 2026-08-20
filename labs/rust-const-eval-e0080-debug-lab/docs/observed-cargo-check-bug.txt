@@ -1,0 +1,9 @@
+[1m[32m    Checking[0m rust_const_eval_e0080_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-const-eval-e0080-debug-lab)
+[0m[1m[38;5;9merror[E0080][0m[0m[1m: evaluation of constant value failed[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:1:25[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m1[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mconst RETRY_DELAY: u8 = 200 + 100;[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                        [0m[0m[1m[38;5;9m^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mattempt to compute `200_u8 + 100_u8`, which would overflow[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0080`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_const_eval_e0080_debug_lab` (lib) due to previous error

@@ -5,6 +5,8 @@
 | E0191 | [rust-associated-type-dyn-e0191-debug-lab](labs/rust-associated-type-dyn-e0191-debug-lab) | 関連型未指定のトレイトオブジェクト |
 | E0505 | [rust-borrow-move-e0505-debug-lab](labs/rust-borrow-move-e0505-debug-lab) |  |
 | E0507 | [rust-borrowed-field-e0507-debug-lab](labs/rust-borrowed-field-e0507-debug-lab) |  |
+| E0525 | [rust-closure-fn-e0525-debug-lab](labs/rust-closure-fn-e0525-debug-lab) | FnOnceクロージャをFnとして渡す失敗 |
+| E0080 | [rust-const-eval-e0080-debug-lab](labs/rust-const-eval-e0080-debug-lab) | 定数評価の整数オーバーフロー |
 | E0038 | [rust-dyn-compatibility-e0038-debug-lab](labs/rust-dyn-compatibility-e0038-debug-lab) | dyn互換でないトレイト |
 | E0061 | [rust-function-args-e0061-debug-lab](labs/rust-function-args-e0061-debug-lab) |  |
 | E0384 | [rust-immutable-reassign-e0384-debug-lab](labs/rust-immutable-reassign-e0384-debug-lab) |  |
@@ -30,3 +32,4 @@
 | E0282 | [rust-type-inference-e0282-debug-lab](labs/rust-type-inference-e0282-debug-lab) |  |
 | E0207 | [rust-unconstrained-impl-e0207-debug-lab](labs/rust-unconstrained-impl-e0207-debug-lab) | 制約されないimpl型パラメータ |
 | E0432 | [rust-unresolved-import-e0432-debug-lab](labs/rust-unresolved-import-e0432-debug-lab) | 解決できないimportパス |
+| E0133 | [rust-unsafe-boundary-e0133-debug-lab](labs/rust-unsafe-boundary-e0133-debug-lab) | unsafe関数の未保護呼び出し |

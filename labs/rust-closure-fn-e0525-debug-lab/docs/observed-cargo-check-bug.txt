@@ -1,0 +1,21 @@
+[1m[32m    Checking[0m rust_closure_fn_e0525_debug_lab v0.1.0 (/home/ubuntu/rust-debug-lab-work/qiita/examples/rust-closure-fn-e0525-debug-lab)
+[0m[1m[38;5;9merror[E0525][0m[0m[1m: expected a closure that implements the `Fn` trait, but this closure only implements `FnOnce`[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:4:17[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m4[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let build = || label;[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                [0m[0m[1m[38;5;9m^^[0m[0m [0m[0m[1m[38;5;12m-----[0m[0m [0m[0m[1m[38;5;12mclosure is `FnOnce` because it moves the variable `label` out of its environment[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                [0m[0m[1m[38;5;9m|[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                [0m[0m[1m[38;5;9mthis closure implements `FnOnce`, not `Fn`[0m
+[0m[1m[38;5;12m5[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    twice(build)[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-----[0m[0m [0m[0m[1m[38;5;12m-----[0m[0m [0m[0m[1m[38;5;12mthe requirement to implement `Fn` derives from here[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mrequired by a bound introduced by this call[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;10mnote[0m[0m: required by a bound in `twice`[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:1:17[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m1[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mpub fn twice<F: Fn() -> String>(build: F) -> (String, String) { (build(), build()) }[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                [0m[0m[1m[38;5;10m^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;10mrequired by this bound in `twice`[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0525`.[0m
+[1m[31merror[0m[1m:[0m could not compile `rust_closure_fn_e0525_debug_lab` (lib) due to previous error
